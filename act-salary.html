@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <!-- Meta Tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/bootstrap-icons.min.css">
+
+  <link href="./css/aos.css" rel="stylesheet">
+
+  <!-- Title & Favicon -->
+  <title> تعريف راتب </title>
+  <link rel="icon" type="image/png" href="./img/favicon.png">
+</head>
+
+
+<body>
+
+  <!-- Desktop Only Warning -->
+  <div id="desktop-warning" class="d-none d-md-flex justify-content-center align-items-center text-center"
+    data-aos-duration="3300" delay="0" data-aos="fade">
+    <div>
+      <img class="py-3" src="./img/logo.svg" width="350px">
+      <h4 class="text-danger">هــذا التطبيق مــصمم للـــجوال فقــــط</h4>
+      <p>نرجو من حضرتكم فتح التطبيق من الجوال لمعاينة أفضل</p>
+    </div>
+  </div>
+
+  <!-- Top Navigation -->
+  <div class="top-nav bg-white pb-3 pt-4 sticky-top">
+    <div class="container d-flex justify-content-between">
+      <h1 class="display-xs bold m-0   ">خطاب تعريف راتب </h1>
+      <a href="services.html">
+        <img src="./img/back.svg" alt="رجوع">
+      </a>
+    </div>
+  </div>
+
+  <!-- Main Card Section -->
+  <div class="container bg py-4 vstack gap-3" style="justify-items: center; margin-bottom: 100px;">
+
+    <div class="bg-white card p-3 vstack gap-3">
+
+
+
+      <div class="animated-input">
+        <label for="exampleFormControlInput1" class="form-label"> اسم الجهة (عربي) </label>
+        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="   ادخل اسم الجهة ">
+        <span class="underline"></span>
+      </div>
+
+
+      <div class="animated-input">
+        <label for="exampleFormControlInput1" class="form-label"> اسم الجهة (إنجليزي) -اختياري </label>
+        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="   ادخل اسم الجهة ">
+        <span class="underline"></span>
+      </div>
+
+
+      <div>
+        <hr>
+        <div class="d-flex justify-content-between   py-1">
+          <label for="exampleFormControlInput1" class="form-label"> إخفاء الراتب </label>
+          <div class="form-check form-switch  custom-switch-rtl">
+            <input class="form-check-input" type="checkbox" id="rtlSwitch" checked>
+          </div>
+        </div>
+        <hr>
+
+      </div>
+
+      <!-- Submit button -->
+      <div class="d-grid gap-2 mt-2">
+        <a href="" class="btn btn-primary" type="button"> اصدار الخطاب </a>
+      </div>
+
+
+    </div>
+
+
+
+
+
+
+  </div>
+
+  </div>
+
+  <!-- Mobile Tab Bar -->
+  <div class="mobile-tab-bar">
+    <!-- Tab: خدماتي -->
+    <div class="tab-item">
+      <a href="services.html" class="link-light link-underline-opacity-0 vstack gap-1">
+        <div><img class="icon" src="./img/user.svg" alt="خدماتي"></div>
+        <div>خدماتي</div>
+      </a>
+    </div>
+
+    <!-- Tab: سجلاتي -->
+    <div class="tab-item">
+      <a href="records.html" class="link-light link-underline-opacity-0 vstack gap-1">
+        <div><img class="icon" src="./img/list.svg" alt="سجلاتي"></div>
+        <div>سجلاتي</div>
+      </a>
+    </div>
+
+    <!-- Tab: الأمانة -->
+    <div class="tab-item">
+      <a href="home.html" class="link-light link-underline-opacity-0 vstack gap-1">
+        <div><img class="icon" src="./img/home.svg" alt="الأمانة"></div>
+        <div>الأمانة</div>
+      </a>
+    </div>
+
+    <!-- Tab: التخفيضات -->
+    <div class="tab-item">
+      <a href="discount.html" class="link-light link-underline-opacity-0 vstack gap-1">
+        <div><img class="icon" src="./img/discount.svg" alt="التخفيضات"></div>
+        <div>التخفيضات</div>
+      </a>
+    </div>
+  </div>
+
+  <!-- JavaScript Files -->
+  <script src="./js/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/popper.min.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

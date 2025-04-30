@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <!-- Meta Tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/bootstrap-icons.min.css">
+
+  <link href="./css/aos.css" rel="stylesheet">
+
+  <!-- Title & Favicon -->
+  <title> الإجازات </title>
+  <link rel="icon" type="image/png" href="./img/favicon.png">
+</head>
+
+
+<style>
+
+</style>
+
+<body>
+
+  <!-- Desktop Only Warning -->
+  <div id="desktop-warning" class="d-none d-md-flex justify-content-center align-items-center text-center"
+    data-aos-duration="3300" delay="0" data-aos="fade">
+    <div>
+      <img class="py-3" src="./img/logo.svg" width="350px">
+      <h4 class="text-danger">هــذا التطبيق مــصمم للـــجوال فقــــط</h4>
+      <p>نرجو من حضرتكم فتح التطبيق من الجوال لمعاينة أفضل</p>
+    </div>
+  </div>
+
+  <!-- Top Navigation -->
+  <div class="top-nav bg-white pb-3 pt-4 sticky-top">
+    <div class="container d-flex justify-content-between">
+      <h1 class="display-xs bold m-0   "> الإجازات </h1>
+      <a href="records.html">
+        <img src="./img/back.svg" alt="رجوع">
+      </a>
+    </div>
+  </div>
+
+  <!-- Main Card Section -->
+  <div class="container bg py-4 vstack gap-3" style="justify-items: center; margin-bottom: 100px;">
+
+    <!-- Stack of cards -->
+    <div class="vstack gap-3" style="width: inherit;">
+      <h3>
+        رصيد الإجازات
+      </h3>
+      <div class="bg-white rounded-3 py-3">
+
+        <!-- الإعتيادية الحالية -->
+        <div class="d-flex justify-content-between align-items-center px-4 py-2">
+          <div class="hstack gap-2">
+            <i class="bi bi-calendar-week fs-5"></i>
+            <span>الإعتيادية الحالية</span>
+          </div>
+          <span class="fw-bold">19 يوم</span>
+        </div>
+        <hr>
+
+        <!-- الإعتيادية للسنوات السابقة -->
+        <div class="d-flex justify-content-between align-items-center px-4 py-2">
+          <div class="hstack gap-2">
+            <i class="bi bi-arrow-repeat fs-5"></i>
+            <span>الإعتيادية للسنوات السابقة</span>
+          </div>
+          <span class="fw-bold">0 يوم</span>
+        </div>
+        <hr>
+
+        <!-- للفرقة المتاحة -->
+        <div class="d-flex justify-content-between align-items-center px-4 py-2">
+          <div class="hstack gap-2">
+            <i class="bi bi-calendar2-week fs-5"></i>
+            <span>للفرقة المتاحة</span>
+          </div>
+          <span class="fw-bold">10 يوم</span>
+        </div>
+        <hr>
+
+        <!-- إجمالي السنوية المتاحة -->
+        <div class="d-flex justify-content-between align-items-center px-4 py-2">
+          <div class="hstack gap-2">
+            <i class="bi bi-journal-plus fs-5"></i>
+            <span>إجمالي السنوية المتاحة</span>
+          </div>
+          <span class="fw-bold">19 يوم</span>
+        </div>
+
+      </div>
+
+
+      <h3 class="mt-5">
+        سجل الإجازات
+      </h3>
+
+      <div class="bg-white rounded-3 py-3">
+
+
+        <!-- Clickable item to open modal -->
+
+        <a href="#" class="clickable-link" data-bs-toggle="modal" data-bs-target="#bottomSheetModal">
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="hstack gap-2">
+              <i class="bi bi-folder fs-4  "></i>
+              <span>رقم الطلب 129480</span>
+            </div>
+            <i class="bi bi-chevron-left display-xs"></i>
+
+          </div>
+        </a>
+
+
+
+        <hr>
+
+        <!-- Repeated item 1 -->
+        <a href="#" class="clickable-link" data-bs-toggle="modal" data-bs-target="#bottomSheetModal">
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="hstack gap-2">
+              <i class="bi bi-folder fs-4  "></i>
+              <span>رقم الطلب 129480</span>
+            </div>
+            <i class="bi bi-chevron-left display-xs"></i>
+
+          </div>
+        </a>
+
+
+        <hr>
+
+        <!-- Repeated item 2 -->
+        <a href="#" class="clickable-link" data-bs-toggle="modal" data-bs-target="#bottomSheetModal">
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="hstack gap-2">
+              <i class="bi bi-folder fs-4  "></i>
+              <span>رقم الطلب 129480</span>
+            </div>
+            <i class="bi bi-chevron-left display-xs"></i>
+
+          </div>
+        </a>
+
+
+      </div>
+    </div>
+
+  </div>
+
+  </div>
+
+  <!-- Mobile Tab Bar -->
+  <div class="mobile-tab-bar">
+    <!-- Tab: خدماتي -->
+    <div class="tab-item">
+      <a href="services.html" class="link-light link-underline-opacity-0 vstack gap-1">
+        <div><img class="icon" src="./img/user.svg" alt="خدماتي"></div>
+        <div>خدماتي</div>
+      </a>
+    </div>
+
+    <!-- Tab: الإجازات -->
+    <div class="tab-item active">
+      <a href="records.html" class="link-light  link-underline-opacity-0 vstack gap-1">
+        <div><img class="icon" src="./img/list.svg" alt="الإجازات"></div>
+        <div>الإجازات</div>
+      </a>
+    </div>
+
+    <!-- Tab: الأمانة -->
+    <div class="tab-item">
+      <a href="home.html" class="link-light link-underline-opacity-0 vstack gap-1">
+        <div><img class="icon" src="./img/home.svg" alt="الأمانة"></div>
+        <div>الأمانة</div>
+      </a>
+    </div>
+
+    <!-- Tab: التخفيضات -->
+    <div class="tab-item">
+      <a href="discount.html" class="link-light link-underline-opacity-0 vstack gap-1">
+        <div><img class="icon" src="./img/discount.svg" alt="التخفيضات"></div>
+        <div>التخفيضات</div>
+      </a>
+    </div>
+  </div>
+
+
+
+  <!-- Bottom sheet modal -->
+  <div class="modal fade bottom-sheet" id="bottomSheetModal" tabindex="-1" dir="rtl">
+    <div class="modal-dialog modal-fullscreen-sm-down modal-dialog-bottom">
+      <div class="modal-content rounded-top">
+
+        <!-- Modal header with handle -->
+        <div class="modal-header border-0 justify-content-center position-relative">
+          <span class="modal-handle"></span>
+        </div>
+
+        <!-- Modal body content -->
+        <div class="modal-body text-center">
+
+          <!-- Title and close button -->
+          <div class="d-flex justify-content-between ">
+
+            <button type="button" class="btn-close  start-0 m-2" data-bs-dismiss="modal"
+              aria-label="Close"></button><span class="fw-bold  justify-content-center "> رقم الطلب 129480
+            </span><button type="button" class="btn-close opacity-0 start-0 m-2" data-bs-dismiss="modal"
+              aria-label="Close"></button>
+          </div>
+
+          <!-- Info card -->
+          <div class="bg-white rounded-3 py-3">
+
+
+            <div class="d-flex justify-content-between px-4 py-1">
+              <h5> حالة الطلب </h5>
+              <span class="badge badge-success">
+                <i class="bi bi-check"></i>
+                تم اصدار قرار الإجازة
+              </span>
+            </div>
+            <hr>
+
+            <div class="d-flex justify-content-between px-4 py-1">
+              <h5> نوع الإجازة </h5>
+              <p class="mb-0 text-muted fs-6"> مرضية </p>
+
+            </div>
+            <hr>
+
+
+            <!-- Mission start -->
+            <div class="d-flex justify-content-between px-4 py-1">
+              <h5> بداية الإجازة </h5>
+              <p class="mb-0 text-muted fs-6"> 1446-10-20هـ </p>
+            </div>
+            <hr>
+
+            <!-- Supervisor -->
+            <div class="d-flex justify-content-between px-4 py-1">
+              <h5> المدة </h5>
+              <p class="mb-0 text-muted fs-6"> متفرقة 1- يوم </p>
+            </div>
+            <hr>
+
+
+            <!-- Mission start -->
+            <div class="d-flex justify-content-between px-4 py-1">
+              <h5> تاريخ التقديم </h5>
+              <p class="mb-0 text-muted fs-6"> 1446-10-20هـ </p>
+            </div>
+
+
+            <!-- Template for additional rows -->
+            <!--
+            <div class="d-flex justify-content-between px-4 py-1">
+              <h5> </h5>
+              <p class="mb-0 text-muted fs-6"> </p>
+            </div>
+            -->
+
+          </div>
+
+          <!-- Submit request button -->
+          <button class="btn btn-dark w-100 mt-4" data-bs-dismiss="modal" aria-label="Close"> رجوع </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- JavaScript Files -->
+  <script src="./js/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/popper.min.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

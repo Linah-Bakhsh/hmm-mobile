@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <!-- Meta Tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/bootstrap-icons.min.css">
+
+  <link href="./css/aos.css" rel="stylesheet">
+
+  <!-- Title & Favicon -->
+  <title> بطاقاتي </title>
+  <link rel="icon" type="image/png" href="./img/favicon.png">
+</head>
+
+
+<style>
+
+</style>
+
+<body>
+
+  <!-- Desktop Only Warning -->
+  <div id="desktop-warning" class="d-none d-md-flex justify-content-center align-items-center text-center"
+    data-aos-duration="3300" delay="0" data-aos="fade">
+    <div>
+      <img class="py-3" src="./img/logo.svg" width="350px">
+      <h4 class="text-danger">هــذا التطبيق مــصمم للـــجوال فقــــط</h4>
+      <p>نرجو من حضرتكم فتح التطبيق من الجوال لمعاينة أفضل</p>
+    </div>
+  </div>
+
+  <!-- Top Navigation -->
+  <div class="top-nav bg-white pb-3 pt-4 sticky-top">
+    <div class="container d-flex justify-content-between">
+      <h1 class="display-xs bold m-0   "> بطاقاتي </h1>
+      <a href="services.html">
+        <img src="./img/back.svg" alt="رجوع">
+      </a>
+    </div>
+  </div>
+
+  <div class="container bg  my-5" style="justify-items: center; position: relative;">
+    <!-- مهم: نضع position: relative هنا -->
+
+
+    <!-- Employee Card -->
+    <div class="interactive-card  shadow-in text-center bg-card bg-white col-11 rounded-4  " data-aos="flip-right"
+      data-aos-duration="1500" data-aos-delay="100">
+      <div class="vstack gap-3 py-4 px-3 box">
+
+        <!-- Logos (Header) -->
+        <div class="d-flex justify-content-between align-items-center">
+          <img src="./img/logo-hmm.png" alt="Holy Makkah Logo" height="65">
+          <img src="./img/logo-hoesing.png" alt="Housing Logo" height="65">
+        </div>
+
+        <!-- User Image -->
+        <div class="user-img size-l text-center align-self-center shadow-md border-5 border border-white">
+          <img src="./img/user-img.png" alt="الصورة الشخصية" class="zoom-img">
+        </div>
+
+        <!-- User Info -->
+        <div>
+          <h5 class="fw-bold mb-1">مشهور هلال السواط</h5>
+          <p class="mb-0 text-muted">مدير إدارة</p>
+          <p class="text-muted small">إدارة الحلول الرقمية</p>
+        </div>
+
+        <!-- QR Code -->
+        <div class="qr-code mb-5">
+          <img src="./img/qr-code.png" alt="QR Code">
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Mobile Tab Bar -->
+  <div class="mobile-tab-bar">
+    <!-- Tab: خدماتي -->
+    <div class="tab-item">
+      <a href="services.html" class="link-light link-underline-opacity-0 vstack gap-1">
+        <div><img class="icon" src="./img/user.svg" alt="خدماتي"></div>
+        <div>خدماتي</div>
+      </a>
+    </div>
+
+    <!-- Tab: سجلاتي -->
+    <div class="tab-item">
+      <a href="records.html" class="link-light link-underline-opacity-0 vstack gap-1">
+        <div><img class="icon" src="./img/list.svg" alt="سجلاتي"></div>
+        <div>سجلاتي</div>
+      </a>
+    </div>
+
+    <!-- Tab: الأمانة -->
+    <div class="tab-item">
+      <a href="home.html" class="link-light link-underline-opacity-0 vstack gap-1">
+        <div><img class="icon" src="./img/home.svg" alt="الأمانة"></div>
+        <div>الأمانة</div>
+      </a>
+    </div>
+
+    <!-- Tab: التخفيضات -->
+    <div class="tab-item">
+      <a href="discount.html" class="link-light link-underline-opacity-0 vstack gap-1">
+        <div><img class="icon" src="./img/discount.svg" alt="التخفيضات"></div>
+        <div>التخفيضات</div>
+      </a>
+    </div>
+  </div>
+
+  <!-- JavaScript Files -->
+  <script src="./js/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/popper.min.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

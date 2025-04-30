@@ -1,0 +1,566 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <!-- Meta Tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/bootstrap-icons.min.css">
+
+  <link href="./css/aos.css" rel="stylesheet">
+
+  <!-- Page Title and Favicon -->
+  <title> المساعد الرقمي</title>
+  <link rel="icon" type="image/png" href="./img/favicon.png">
+</head>
+
+
+<body>
+
+  <!-- Desktop warning (only visible on larger screens) -->
+  <div id="desktop-warning" class="d-none d-md-flex justify-content-center align-items-center text-center"
+    data-aos-duration="3300" delay="0" data-aos="fade">
+    <div>
+      <img class="py-3" src="./img/logo.svg" width="350px">
+      <h4 class="text-danger">هــذا التطبيق مــصمم للـــجوال فقــــط</h4>
+      <p>نرجو من حضرتكم فتح التطبيق من الجوال لمعاينة أفضل</p>
+    </div>
+  </div>
+
+  <!-- Top navigation header -->
+  <div class="top-nav bg-white pb-3 pt-4 sticky-top">
+    <div class="container d-flex justify-content-between">
+      <h1 class="display-xs bold m-0   "> المساعد الرقمي</h1>
+      <a href="services.html">
+        <img src="./img/back.svg" alt="رجوع">
+      </a>
+    </div>
+  </div>
+
+  <!-- Main section with content and tabs -->
+  <div class="container bg py-4 vstack gap-3" style="justify-items: center; margin-bottom: 100px;">
+
+    <!-- Navigation pills (tabs) -->
+    <ul class="nav nav-pills  nav-justified  p-0 custom-tabs" id="pills-tab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <a class="nav-link  active" href="#" data-bs-toggle="pill" data-bs-target="#tap-1">المُجازون </a>
+      </li>
+      <li class="nav-item" role="presentation">
+        <a class="nav-link   " href="#" data-bs-toggle="pill" data-bs-target="#tap-2"> المنتدبون </a>
+      </li>
+
+      <li class="nav-item" role="presentation">
+        <a class="nav-link   " href="#" data-bs-toggle="pill" data-bs-target="#tap-3"> استعلام </a>
+      </li>
+
+      <li class="nav-item" role="presentation">
+        <a class="nav-link   " href="#" data-bs-toggle="pill" data-bs-target="#tap-4"> متقاعدين </a>
+      </li>
+
+    </ul>
+
+
+    <!-- Tabs content -->
+    <div class="tab-content" id="pills-tabContent">
+      <div class="tab-pane fade   active show" id="tap-1" tabindex="0">
+
+        <div class=" vstack gap-3">
+          <div class="bg-white card p-3  aos-init aos-animate">
+            <!-- Vertical stack for mission info -->
+            <div class="vstack gap-3" style="width: inherit;">
+              <div class="animated-input">
+                <label for="exampleFormControlInput1" class="form-label"> الوكالة </label>
+                <select class="form-select form-control" aria-label="Default select example">
+                  <option selected=""> اختر </option>
+
+                </select>
+                <span class="underline"></span>
+              </div>
+
+              <div class="animated-input">
+                <label for="exampleFormControlInput1" class="form-label"> الإدارة </label>
+                <select class="form-select form-control" aria-label="Default select example">
+                  <option selected=""> اختر </option>
+
+                </select>
+                <span class="underline"></span>
+              </div>
+
+              <div class="animated-input">
+                <label for="exampleFormControlInput1" class="form-label"> اسم \ رقم الموظف </label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="     ">
+                <span class="underline"></span>
+              </div>
+              <a href="#" class="btn btn-primary" type="button">
+
+                <i class="bi bi-search"></i>
+                بحث </a>
+
+            </div>
+
+
+          </div>
+
+
+
+          <div class="bg-white card p-3 hstack gap-3 aos-init aos-animate">
+
+            <h3>
+              <i class="bi bi-people fs-3"></i>
+
+              قائمة المجازون
+              (0)
+            </h3>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Tabs content -->
+      <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade  " id="tap-2" tabindex="0">
+
+          <!-- Vertical stack for mission info -->
+          <div class="vstack gap-3" style="width: inherit;">
+            <h3>
+              <i class="bi bi-people fs-3"></i>
+
+              قائمة المنتدبون
+              (1)
+            </h3>
+
+            <div class="bg-white card p-3 hstack gap-3 aos-init aos-animate">
+              <div class="icon-circle lg mx-auto">
+                <i class="bi bi-person"></i>
+              </div>
+              <div class="vstack justify-content-center gap-1">
+
+                <div class=" d-flex justify-content-between gap-4">
+                  <h6 class="mb-0 bold">راكان إبراهيم بن محمد اللحيبي</h6>
+
+                </div>
+                <p class="mb-0 text-pr">إدارة العلاقات والشراكات الاستراتيجية
+
+                </p>
+                <div class=" d-flex justify-content-between gap-4">
+                  <p class="mb-0">معهد الإدارة العامة
+
+                  </p>
+
+
+                </div>
+                <div class=" d-flex justify-content-between gap-4">
+                  <p class="mb-0 ">الدمام- 3 أيام </p>
+                  <p class="mb-0 opacity-25">
+                    15/10/1446 هـ
+
+                  </p>
+                </div>
+
+
+              </div>
+            </div>
+
+
+
+
+          </div>
+        </div>
+
+
+        <!-- Tabs content -->
+        <div class="tab-content" id="pills-tabContent">
+          <div class="tab-pane fade    " id="tap-3" tabindex="0">
+
+            <!-- Vertical stack for mission info -->
+            <div class=" vstack gap-3">
+              <div class="bg-white card p-3  aos-init aos-animate">
+                <!-- Vertical stack for mission info -->
+                <div class="vstack gap-3" style="width: inherit;">
+                  <div class="animated-input">
+                    <label for="exampleFormControlInput1" class="form-label"> الوكالة </label>
+                    <select class="form-select form-control" aria-label="Default select example">
+                      <option selected=""> اختر </option>
+
+                    </select>
+                    <span class="underline"></span>
+                  </div>
+
+                  <div class="animated-input">
+                    <label for="exampleFormControlInput1" class="form-label"> الإدارة </label>
+                    <select class="form-select form-control" aria-label="Default select example">
+                      <option selected=""> اختر </option>
+
+                    </select>
+                    <span class="underline"></span>
+                  </div>
+
+                  <div class="animated-input">
+                    <label for="exampleFormControlInput1" class="form-label"> اسم \ رقم الموظف </label>
+                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder=" مدة الإجازة ">
+                    <span class="underline"></span>
+                  </div>
+                  <a href="#" class="btn btn-primary" type="button">
+
+                    <i class="bi bi-search"></i>
+                    بحث </a>
+
+                </div>
+
+
+              </div>
+
+
+
+              <div class="bg-white card p-3 hstack gap-3 aos-init aos-animate">
+
+                <h3>
+                  <i class="bi bi-people fs-3"></i>
+
+                  نتائج البحث
+                  (0)
+                </h3>
+              </div>
+
+            </div>
+          </div>
+          <!-- Tabs content -->
+          <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade  " id="tap-4" tabindex="0">
+
+              <!-- Vertical stack for mission info -->
+              <div class="vstack gap-3" style="width: inherit;">
+
+                <h3>
+                  <i class="bi bi-people fs-3"></i>
+
+                  قائمة المتقاعدين خلال هذا العام
+                  (2)
+                </h3>
+
+
+                <div class="bg-white card p-3 hstack gap-3 aos-init aos-animate">
+                  <div class="icon-circle lg mx-auto">
+                    <i class="bi bi-person"></i>
+                  </div>
+                  <div class="vstack justify-content-center gap-1">
+                    <div class=" d-flex justify-content-between gap-4">
+                      <h6 class="mb-0 bold"> فهد صالح الشمري </h6>
+                      <p class="mb-0">
+                        <i class="bi bi-bookmark-star text-primary fs-6"></i>
+                        المرتبة
+                        12
+                      </p>
+                    </div>
+                    <p class="mb-0 text-pr">
+
+                      مشرف ميداني
+                    </p>
+                    <div class=" d-flex justify-content-between gap-4">
+                      <p class="mb-0">
+
+                        إدارة الخدمات الإدارية
+                      </p>
+                      <p class="mb-0 mb-0 opacity-25">
+
+                        1446-10-20
+                      </p>
+
+                    </div>
+
+
+                  </div>
+                </div>
+
+
+
+                <div class="bg-white card p-3 hstack gap-3 aos-init aos-animate">
+                  <div class="icon-circle lg mx-auto">
+                    <i class="bi bi-person"></i>
+                  </div>
+                  <div class="vstack justify-content-center gap-1">
+                    <div class=" d-flex justify-content-between gap-4">
+                      <h6 class="mb-0 bold"> محمد عبد الرحيم بخاري </h6>
+                      <p class="mb-0">
+                        <i class="bi bi-bookmark-star text-primary fs-6"></i>
+                        المرتبة
+                        12
+                      </p>
+                    </div>
+                    <p class="mb-0 text-pr">
+
+                      مشرف ميداني
+                    </p>
+                    <div class=" d-flex justify-content-between gap-4">
+                      <p class="mb-0">
+
+                        إدارة الخدمات الإدارية
+                      </p>
+                      <p class="mb-0 mb-0 opacity-25">
+
+                        1446-10-20
+                      </p>
+
+                    </div>
+
+
+                  </div>
+                </div>
+
+
+              </div>
+            </div>
+
+            <!-- Tab for submitting mission request -->
+            <div class="tab-pane fade  " id="order" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
+
+              <!-- Stack of cards -->
+              <div class="vstack gap-3" style="width: inherit;">
+                <div class="bg-white rounded-3 py-3">
+
+                  <!-- Clickable item to open modal -->
+
+                  <a href="#" class="clickable-link" data-bs-toggle="modal" data-bs-target="#bottomSheetModal">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="hstack gap-2">
+                        <i class="bi bi-folder fs-4  "></i>
+                        <span> رقم قرار الانتداب 129480 </span>
+                      </div>
+                      <i class="bi bi-chevron-left display-xs"></i>
+
+                    </div>
+                  </a>
+
+
+
+                  <hr>
+
+                  <!-- Repeated item 1 -->
+                  <a href="#" class="clickable-link" data-bs-toggle="modal" data-bs-target="#bottomSheetModal">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="hstack gap-2">
+                        <i class="bi bi-folder fs-4  "></i>
+                        <span> رقم قرار الانتداب 129480 </span>
+                      </div>
+                      <i class="bi bi-chevron-left display-xs"></i>
+
+                    </div>
+                  </a>
+
+
+                  <hr>
+
+                  <!-- Repeated item 2 -->
+                  <a href="#" class="clickable-link" data-bs-toggle="modal" data-bs-target="#bottomSheetModal">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="hstack gap-2">
+                        <i class="bi bi-folder fs-4  "></i>
+                        <span> رقم قرار الانتداب 129480 </span>
+                      </div>
+                      <i class="bi bi-chevron-left display-xs"></i>
+
+                    </div>
+                  </a>
+
+
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+          <!-- Tab for submitting mission request -->
+          <div class="tab-pane fade  " id="order" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
+
+            <!-- Stack of cards -->
+            <div class="vstack gap-3" style="width: inherit;">
+              <div class="bg-white rounded-3 py-3">
+
+                <!-- Clickable item to open modal -->
+
+                <a href="#" class="clickable-link" data-bs-toggle="modal" data-bs-target="#bottomSheetModal">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="hstack gap-2">
+                      <i class="bi bi-folder fs-4  "></i>
+                      <span> رقم قرار الانتداب 129480 </span>
+                    </div>
+                    <i class="bi bi-chevron-left display-xs"></i>
+
+                  </div>
+                </a>
+
+
+
+                <hr>
+
+                <!-- Repeated item 1 -->
+                <a href="#" class="clickable-link" data-bs-toggle="modal" data-bs-target="#bottomSheetModal">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="hstack gap-2">
+                      <i class="bi bi-folder fs-4  "></i>
+                      <span> رقم قرار الانتداب 129480 </span>
+                    </div>
+                    <i class="bi bi-chevron-left display-xs"></i>
+
+                  </div>
+                </a>
+
+
+                <hr>
+
+                <!-- Repeated item 2 -->
+                <a href="#" class="clickable-link" data-bs-toggle="modal" data-bs-target="#bottomSheetModal">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="hstack gap-2">
+                      <i class="bi bi-folder fs-4  "></i>
+                      <span> رقم قرار الانتداب 129480 </span>
+                    </div>
+                    <i class="bi bi-chevron-left display-xs"></i>
+
+                  </div>
+                </a>
+
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom sheet modal -->
+      <div class="modal fade bottom-sheet" id="bottomSheetModal" tabindex="-1" dir="rtl">
+        <div class="modal-dialog modal-fullscreen-sm-down modal-dialog-bottom">
+          <div class="modal-content rounded-top">
+
+            <!-- Modal header with handle -->
+            <div class="modal-header border-0 justify-content-center position-relative">
+              <span class="modal-handle"></span>
+            </div>
+
+            <!-- Modal body content -->
+            <div class="modal-body text-center">
+
+              <!-- Title and close button -->
+              <div class="d-flex justify-content-between ">
+
+                <button type="button" class="btn-close  start-0 m-2" data-bs-dismiss="modal"
+                  aria-label="Close"></button><span class="fw-bold  justify-content-center "> رقم الطلب 129480
+                </span><button type="button" class="btn-close opacity-0 start-0 m-2" data-bs-dismiss="modal"
+                  aria-label="Close"></button>
+              </div>
+
+              <!-- Info card -->
+              <div class="bg-white rounded-3 py-3">
+
+                <!-- Mission start -->
+                <div class="d-flex justify-content-between px-4 py-1">
+                  <h5> بداية الانتداب </h5>
+                  <p class="mb-0 text-muted fs-6"> 1446-10-20هـ </p>
+                </div>
+                <hr>
+
+                <!-- Supervisor -->
+                <div class="d-flex justify-content-between px-4 py-1">
+                  <h5> الرئيس المباشر </h5>
+                  <p class="mb-0 text-muted fs-6"> خالد بن بندر المدني </p>
+                </div>
+                <hr>
+
+                <!-- Duration and city -->
+                <div class="d-flex justify-content-between px-4 py-1">
+                  <h5> المدة -المدينة </h5>
+                  <p class="mb-0 text-muted fs-6"> 1 يوم- الرياض </p>
+                </div>
+                <hr>
+
+                <!-- Transportation and meals -->
+                <div class="d-flex justify-content-between px-4 py-1">
+                  <h5> المواصلات - الطعام </h5>
+                  <p class="mb-0 text-muted fs-6"> الجهة- الموظف </p>
+                </div>
+                <hr>
+
+                <!-- Accommodation and travel -->
+                <div class="d-flex justify-content-between px-4 py-1">
+                  <h5> السكن - السفر </h5>
+                  <p class="mb-0 text-muted fs-6"> الجهة- الجهة </p>
+                </div>
+
+                <!-- Template for additional rows -->
+                <!--
+            <div class="d-flex justify-content-between px-4 py-1">
+              <h5> </h5>
+              <p class="mb-0 text-muted fs-6"> </p>
+            </div>
+            -->
+
+              </div>
+
+              <!-- Submit request button -->
+              <button class="btn btn-dark w-100 mt-4">إضافة طلب</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile tab bar navigation -->
+      <div class="mobile-tab-bar">
+
+        <!-- Tab: Services -->
+        <div class="tab-item">
+          <a href="services.html" class="link-light link-underline-opacity-0 vstack gap-1">
+            <div><img class="icon" src="./img/user.svg" alt="خدماتي"></div>
+            <div>خدماتي</div>
+          </a>
+        </div>
+
+        <!-- Tab: Records -->
+        <div class="tab-item">
+          <a href="records.html" class="link-light link-underline-opacity-0 vstack gap-1">
+            <div><img class="icon" src="./img/list.svg" alt="سجلاتي"></div>
+            <div>سجلاتي</div>
+          </a>
+        </div>
+
+        <!-- Tab: Home -->
+        <div class="tab-item">
+          <a href="home.html" class="link-light link-underline-opacity-0 vstack gap-1">
+            <div><img class="icon" src="./img/home.svg" alt="الأمانة"></div>
+            <div>الأمانة</div>
+          </a>
+        </div>
+
+        <!-- Tab: Discounts -->
+        <div class="tab-item">
+          <a href="discount.html" class="link-light link-underline-opacity-0 vstack gap-1">
+            <div><img class="icon" src="./img/discount.svg" alt="التخفيضات"></div>
+            <div>التخفيضات</div>
+          </a>
+        </div>
+      </div>
+
+
+      <!-- AOS animation plugin -->
+      <script src="./js/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
+
+      <!-- Additional JS libraries -->
+      <script src="./js/bootstrap.bundle.min.js"></script>
+      <script src="./js/popper.min.js"></script>
+      <script src="./js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <!-- Meta Tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/bootstrap-icons.min.css">
+
+  <link href="./css/aos.css" rel="stylesheet">
+
+  <!-- Title & Favicon -->
+  <title>الإعدادات</title>
+  <link rel="icon" type="image/png" href="./img/favicon.png">
+</head>
+
+<style>
+  /* Custom styles (optional) */
+</style>
+
+<body>
+
+  <!-- Desktop Warning Message -->
+  <div id="desktop-warning" class="d-none d-md-flex justify-content-center align-items-center text-center"
+    data-aos-duration="3300" delay="0" data-aos="fade">
+    <div>
+      <img class="py-3" src="./img/logo.svg" width="350px">
+      <h4 class="text-danger">هــذا التطبيق مــصمم للـــجوال فقــــط</h4>
+      <p>نرجو من حضرتكم فتح التطبيق من الجوال لمعاينة أفضل</p>
+    </div>
+  </div>
+
+  <!-- Top Navigation -->
+  <div class="top-nav bg-white pb-3 pt-4 sticky-top">
+    <div class="container d-flex justify-content-between">
+      <h1 class="display-xs bold m-0   ">الإعدادات</h1>
+      <a href="services.html">
+        <img src="./img/back.svg" alt="">
+      </a>
+    </div>
+  </div>
+
+  <!-- Settings Content -->
+  <div class="container bg py-5" style="justify-items: center;">
+
+    <div class="vstack gap-3" style="width: inherit;">
+
+      <!-- User Image -->
+      <div class="user-img size-l text-center align-self-center">
+        <img src="./img/user-img.png" alt="..." class="zoom-img">
+      </div>
+
+      <!-- Edit Profile Link -->
+      <a href="#" class="text-center link-dark link-underline-opacity-0 mb-3">
+        <small class="bold text-dark">
+          <i class="bi bi-pencil"></i> تعديل
+        </small>
+      </a>
+
+      <!-- Section Title -->
+      <h3>اعدادات عامة</h3>
+
+      <!-- Switches Section -->
+      <div class="bg-white rounded-3 py-3">
+
+        <!-- Switch 1: Show profile image -->
+        <!-- Switch 1: Show profile image -->
+        <div class="d-flex justify-content-between px-4 py-1">
+          <h6>إخفاء الصورة الشخصية</h6>
+          <div class="form-check form-switch px-2 custom-switch-rtl">
+            <input class="form-check-input" type="checkbox" id="showProfileSwitch">
+          </div>
+        </div>
+
+        <hr>
+
+        <!-- Switch 2: Remember login -->
+        <div class="d-flex justify-content-between px-4 py-1">
+          <h6>حفظ بيانات الدخول</h6>
+          <div class="form-check form-switch px-2 custom-switch-rtl">
+            <input class="form-check-input" type="checkbox" id="rtlSwitch">
+          </div>
+        </div>
+
+        <hr>
+
+        <!-- Switch 3: Fingerprint login -->
+        <div class="d-flex justify-content-between px-4 pt-1">
+          <h6>الدخول بالبصمة</h6>
+          <div class="form-check form-switch px-2 custom-switch-rtl">
+            <input class="form-check-input" type="checkbox" id="rtlSwitch">
+          </div>
+        </div>
+
+
+
+      </div>
+
+      <!-- Save Button 
+      <div class="d-grid gap-2">
+        <button class="btn btn-outline-secondary" type="button">
+          <i class="bi bi-pencil"></i> حفظ التعديل
+        </button>
+-->
+      <button class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#bottomSheetModal" type="button">
+        <i class="bi bi-power fs-4"></i>تسجيل الخروج
+      </button>
+    </div>
+
+  </div>
+  </div>
+
+
+
+  <!-- Bottom sheet modal for course details -->
+  <div class="modal fade bottom-sheet" id="bottomSheetModal" tabindex="-1" dir="rtl">
+    <div class="modal-dialog modal-fullscreen-sm-down modal-dialog-bottom">
+      <div class="modal-content rounded-top">
+
+        <!-- Modal header with draggable handle -->
+        <div class="modal-header border-0 justify-content-center position-relative">
+          <span class="modal-handle"></span>
+        </div>
+
+        <!-- Modal body: course details -->
+        <div class="modal-body text-center">
+
+          <!-- Modal title and close buttons -->
+          <div class="d-flex justify-content-between">
+            <button type="button" class="btn-close start-0 m-2" data-bs-dismiss="modal" aria-label="Close"></button>
+            <span class="fw-bold justify-content-center"> تأكيد تسجيل الخروج </span>
+            <button type="button" class="btn-close opacity-0 start-0 m-2" data-bs-dismiss="modal"
+              aria-label="Close"></button>
+          </div>
+
+          <h4 class="fw-bold justify-content-center"> هل ترغب بالتأكيد تسجيل الخروج ؟ </h4>
+
+          <!-- Return button -->
+          <a href="./index.html" class="btn btn-danger w-100 mt-4">
+            <i class="bi bi-power fs-4"></i>
+            خروج
+          </a>
+          <button class="btn btn-outline-secondary w-100 mb-4 mt-3" data-bs-dismiss="modal"
+            aria-label="Close">رجوع</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Mobile Tab Bar -->
+  <div class="mobile-tab-bar">
+    <div class="tab-item">
+      <a href="services.html" class="link-light link-underline-opacity-0 vstack gap-1">
+        <div><img class="icon" src="./img/user.svg" alt=""></div>
+        <div>خدماتي</div>
+      </a>
+    </div>
+    <div class="tab-item">
+      <a href="records.html" class="link-light link-underline-opacity-0 vstack gap-1">
+        <div><img class="icon" src="./img/list.svg" alt=""></div>
+        <div>سجلاتي</div>
+      </a>
+    </div>
+    <div class="tab-item">
+      <a href="home.html" class="link-light link-underline-opacity-0 vstack gap-1">
+        <div><img class="icon" src="./img/home.svg" alt=""></div>
+        <div>الأمانة</div>
+      </a>
+    </div>
+    <div class="tab-item">
+      <a href="discount.html" class="link-light link-underline-opacity-0 vstack gap-1">
+        <div><img class="icon" src="./img/discount.svg" alt=""></div>
+        <div>التخفيضات</div>
+      </a>
+    </div>
+  </div>
+
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const profileSwitch = document.getElementById('showProfileSwitch');
+      const userImage = document.querySelector('.user-img img'); // نحدد الصورة نفسها
+
+      profileSwitch.addEventListener('change', function () {
+        if (this.checked) {
+          userImage.style.filter = 'blur(8px)'; // نضيف بلور للصورة
+        } else {
+          userImage.style.filter = 'none'; // بدون تأثير
+
+        }
+      });
+    });
+  </script>
+
+
+  <!-- JavaScript Files -->
+  <script src="./js/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/popper.min.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

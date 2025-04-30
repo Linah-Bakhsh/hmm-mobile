@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <!-- Meta tags for character encoding and responsive layout -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- External stylesheets: Bootstrap, custom styles, icons, AOS animation -->
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/bootstrap-icons.min.css">
+
+  <link href="./css/aos.css" rel="stylesheet">
+
+  <!-- Page title and favicon -->
+  <title> اختصار الروابط </title>
+  <link rel="icon" type="image/png" href="./img/favicon.png">
+</head>
+
+
+<body>
+
+  <!-- Desktop-only warning overlay (hidden on small screens) -->
+  <div id="desktop-warning" class="d-none d-md-flex justify-content-center align-items-center text-center"
+    data-aos-duration="3300" delay="0" data-aos="fade">
+    <div>
+      <img class="py-3" src="./img/logo.svg" width="350px">
+      <h4 class="text-danger">هــذا التطبيق مــصمم للـــجوال فقــــط</h4>
+      <p>نرجو من حضرتكم فتح التطبيق من الجوال لمعاينة أفضل</p>
+    </div>
+  </div>
+
+  <!-- Sticky top navigation bar -->
+  <div class="top-nav bg-white pb-3 pt-4 sticky-top">
+    <div class="container d-flex justify-content-between">
+      <h1 class="display-xs bold m-0"> اختصار الروابط </h1>
+      <a href="services.html">
+        <img src="./img/back.svg" alt="رجوع">
+      </a>
+    </div>
+  </div>
+
+  <!-- Main content area -->
+  <div class="container bg py-4 vstack gap-3" style="justify-items: center; margin-bottom: 100px;">
+
+    <!-- Tabs navigation -->
+    <ul class="nav nav-pills nav-justified p-0 custom-tabs" id="pills-tab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <a class="nav-link active" href="#" data-bs-toggle="pill" data-bs-target="#commit"> انشاء رابط QR جديد </a>
+      </li>
+      <li class="nav-item" role="presentation" data-bs-toggle="pill" data-bs-target="#order">
+        <a class="nav-link" href="#"> الاختصارات السابقة </a>
+      </li>
+    </ul>
+
+    <!-- Tab content wrapper -->
+    <div class="tab-content" id="pills-tabContent">
+
+      <!-- Tab 1: Create new QR link -->
+      <div class="tab-pane fade show active" id="commit" role="tabpanel" aria-labelledby="pills-profile-tab"
+        tabindex="0">
+
+        <!-- Stack container -->
+        <div class="vstack gap-3" style="width: inherit;">
+
+          <!-- Input card -->
+          <div class="bg-white card p-3 vstack gap-3">
+
+            <!-- Shortcut name input -->
+            <div class="animated-input">
+              <label for="exampleFormControlInput1" class="form-label"> اسم الاختصار </label>
+              <input type="text" class="form-control" id="exampleFormControlInput1"
+                placeholder="    اكتب اسم الاختصار ">
+              <span class="underline"></span>
+            </div>
+
+            <!-- Shortcut description input -->
+            <div class="animated-input">
+              <label for="exampleFormControlInput1" class="form-label"> وصف الاختصار </label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                placeholder="اكتب وصف الاختصار.."></textarea>
+              <span class="underline"></span>
+            </div>
+
+            <!-- URL input -->
+            <div class="animated-input">
+              <label for="exampleFormControlInput1" class="form-label"> الرابط المطلوب اختصاره </label>
+              <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="   الصق الرابط">
+              <span class="underline"></span>
+            </div>
+
+            <!-- Submit button -->
+            <div class="d-grid gap-2 mt-2">
+              <a href="" class="btn btn-primary" type="button"> اصدار الخطاب </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab 2: Previous shortcuts -->
+      <div class="tab-pane fade" id="order" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
+
+        <!-- Stack container for cards -->
+        <div class="vstack gap-3" style="width: inherit;">
+
+          <!-- Shortcut card 1 -->
+          <div class="bg-white card p-3 hstack gap-3" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100">
+            <img class="border border-3 border-primary rounded-3" src="./img/qr-code.png" width="75px" alt="">
+
+            <div class="vstack justify-content-center">
+              <div class="d-flex justify-content-between">
+                <h6 class="mb-1 bold"> الوظائف الموسمية </h6>
+                <i class="bi bi-x-lg text-muted"></i>
+              </div>
+              <p class="mb-1">
+                <i class="bi bi-link-45deg text-primary fs-6"></i>
+                hmm.gov.sa/portal/docu
+              </p>
+              <div class="hstack gap-4">
+                <p class="mb-0">
+                  <i class="bi bi-calendar2-event text-primary fs-6"></i>
+                  1446-10-20
+                </p>
+                <p class="mb-0">
+                  <i class="bi bi-download text-primary fs-6"></i>
+                  247
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Shortcut card 2 -->
+          <div class="bg-white card p-3 hstack gap-3" data-aos="fade-up" data-aos-duration="500" data-aos-delay="200">
+            <img class="border border-3 border-primary rounded-3" src="./img/qr-code.png" width="75px" alt="">
+
+            <div class="vstack justify-content-center">
+              <div class="d-flex justify-content-between">
+                <h6 class="mb-1 bold"> الوظائف الموسمية </h6>
+                <i class="bi bi-x-lg text-muted"></i>
+              </div>
+              <p class="mb-1">
+                <i class="bi bi-link-45deg text-primary fs-6"></i>
+                hmm.gov.sa/portal/docu
+              </p>
+              <div class="hstack gap-4">
+                <p class="mb-0">
+                  <i class="bi bi-calendar2-event text-primary fs-6"></i>
+                  1446-10-20
+                </p>
+                <p class="mb-0">
+                  <i class="bi bi-download text-primary fs-6"></i>
+                  247
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Shortcut card 3 -->
+          <div class="bg-white card p-3 hstack gap-3" data-aos="fade-up" data-aos-duration="500" data-aos-delay="300">
+            <img class="border border-3 border-primary rounded-3" src="./img/qr-code.png" width="75px" alt="">
+
+            <div class="vstack justify-content-center">
+              <div class="d-flex justify-content-between">
+                <h6 class="mb-1 bold"> الوظائف الموسمية </h6>
+                <i class="bi bi-x-lg text-muted"></i>
+              </div>
+              <p class="mb-1">
+                <i class="bi bi-link-45deg text-primary fs-6"></i>
+                hmm.gov.sa/portal/docu
+              </p>
+              <div class="hstack gap-4">
+                <p class="mb-0">
+                  <i class="bi bi-calendar2-event text-primary fs-6"></i>
+                  1446-10-20
+                </p>
+                <p class="mb-0">
+                  <i class="bi bi-download text-primary fs-6"></i>
+                  247
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile tab bar at bottom -->
+  <div class="mobile-tab-bar">
+
+    <!-- Tab: خدماتي -->
+    <div class="tab-item">
+      <a href="services.html" class="link-light link-underline-opacity-0 vstack gap-1">
+        <div><img class="icon" src="./img/user.svg" alt="خدماتي"></div>
+        <div>خدماتي</div>
+      </a>
+    </div>
+
+    <!-- Tab: سجلاتي -->
+    <div class="tab-item">
+      <a href="records.html" class="link-light link-underline-opacity-0 vstack gap-1">
+        <div><img class="icon" src="./img/list.svg" alt="سجلاتي"></div>
+        <div>سجلاتي</div>
+      </a>
+    </div>
+
+    <!-- Tab: الأمانة -->
+    <div class="tab-item">
+      <a href="home.html" class="link-light link-underline-opacity-0 vstack gap-1">
+        <div><img class="icon" src="./img/home.svg" alt="الأمانة"></div>
+        <div>الأمانة</div>
+      </a>
+    </div>
+
+    <!-- Tab: التخفيضات -->
+    <div class="tab-item">
+      <a href="discount.html" class="link-light link-underline-opacity-0 vstack gap-1">
+        <div><img class="icon" src="./img/discount.svg" alt="التخفيضات"></div>
+        <div>التخفيضات</div>
+      </a>
+    </div>
+  </div>
+
+  <!-- JavaScript files and plugin initialization -->
+  <script src="./js/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/popper.min.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

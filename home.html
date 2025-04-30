@@ -1,0 +1,210 @@
+<!-- HTML file for Holy Makkah Municipality Services -->
+
+<!doctype html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <!-- Meta tags for responsive layout and UTF-8 encoding -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Stylesheets: Bootstrap, custom styles, Bootstrap Icons, AOS animations -->
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/bootstrap-icons.min.css">
+  <link href="./css/aos.css" rel="stylesheet">
+
+  <!-- Page title and favicon -->
+  <title>خدماتي</title>
+  <link rel="icon" type="image/png" href="./img/favicon.png">
+</head>
+
+
+<body>
+
+  <!-- Desktop-only warning message -->
+  <div id="desktop-warning" class="d-none d-md-flex justify-content-center align-items-center text-center"
+    data-aos-duration="3300" delay="0" data-aos="fade">
+    <div>
+      <img class="py-3" src="./img/logo.svg" width="350px">
+      <h4 class="text-danger">هــذا التطبيق مــصمم للـــجوال فقــــط</h4>
+      <p>نرجو من حضرتكم فتح التطبيق من الجوال لمعاينة أفضل</p>
+    </div>
+  </div>
+
+  <!-- Top navigation with logo -->
+  <div class="top-nav bg-white pb-3 pt-4 sticky-top">
+    <div class="container d-flex justify-content-center">
+      <h1 class="display-xs bold m-0">
+        <img class="mb-4 aos-init aos-animate" data-aos="fade" data-aos-duration="3300" delay="0" src="./img/logo.svg"
+          width="155px">
+      </h1>
+    </div>
+  </div>
+
+  <!-- Image and video slider -->
+  <div id="carouselExampleAutoplaying" class="carousel slide" data-aos="fade-in" data-aos-duration="1500"
+    data-aos-delay="0">
+    <div class="carousel-inner" style="height: 200px;">
+      <!-- Image slide -->
+      <div class="carousel-item">
+        <img src="https://hmm.gov.sa/hmm_mgr/fup/2025324012638_sli_file_sm.PNG" class="d-block w-100"
+          style="height: 200px; object-fit: cover;" alt="...">
+      </div>
+
+      <!-- Video slide with caption -->
+      <div class="carousel-item active">
+        <video class="d-block w-100" style="height: 200px; object-fit: cover;" autoplay muted loop playsinline>
+          <source src="./img/video.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="carousel-caption d-md-block">
+          <p>نسعى في تقديم خدمات بلدية راقية لساكني أم القرى وقاصديها.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main section -->
+  <div class="container bg py-3 vstack gap-3" style="margin-bottom: 100px;">
+    <h3>نظرة سريعة</h3>
+
+    <!-- Grid of service cards -->
+    <div class="row row-cols-3 g-3 text-center">
+
+      <!-- News card -->
+      <a href="#" class="col" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="200">
+        <div class="card border-0 rounded-4">
+          <div class="card-body">
+            <div class="icon-circle mx-auto mb-3">
+              <i class="bi bi-newspaper"></i>
+            </div>
+            <h6 class="mt-3 mb-0">الأخبار</h6>
+          </div>
+        </div>
+      </a>
+
+      <!-- General services card -->
+      <a href="#" class="col" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="300">
+        <div class="card border-0 rounded-4">
+          <div class="card-body">
+            <div class="icon-circle mx-auto mb-3">
+              <i class="bi bi-ui-checks-grid"></i>
+            </div>
+            <h6 class="mt-3 mb-0">خدمات عامة</h6>
+          </div>
+        </div>
+      </a>
+
+      <!-- About municipality card -->
+      <a href="#" class="col" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="400">
+        <div class="card border-0 rounded-4">
+          <div class="card-body">
+            <div class="icon-circle mx-auto mb-3">
+              <i class="bi bi-info-circle"></i>
+            </div>
+            <h6 class="mt-3 mb-0">عن الأمانة</h6>
+          </div>
+        </div>
+      </a>
+
+    </div>
+
+    <!-- News section -->
+    <h3>آخر الأخبار</h3>
+
+    <!-- News carousel -->
+    <div id="newsCarousel" class="carousel slide" data-bs-ride="carousel" data-aos="fade-in" data-aos-duration="1500"
+      data-aos-delay="400">
+      <div class="carousel-inner">
+
+        <!-- News card 1 -->
+        <div class="carousel-item p-4 active">
+          <div class="card text-start mx-auto" style="max-width: 90%;">
+            <div class="rounded p-3">
+              <img src="https://hmm.gov.sa/hmm_mgr/fup/2025422034742_nw_file.JPEG?v=1" class="card-img-top rounded-3"
+                alt="...">
+            </div>
+            <div class="card-body pt-2 vstack gap-2">
+              <h5 class="card-title text-start">الشهادات الصحية الموسمية</h5>
+              <p class="card-text text-start">
+                أمانة العاصمة المقدسة تُعلن عن ضوابط الحصول على الشهادات الصحية الموسمية لحج عام 1446هـ
+              </p>
+              <small>2025-12-03</small>
+              <a href="#" class="btn btn-primary mt-2">المزيد</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- News card 2 -->
+        <div class="carousel-item p-4">
+          <div class="card text-start mx-auto" style="max-width: 90%;">
+            <div class="rounded p-3">
+              <img src="https://hmm.gov.sa/hmm_mgr/fup/2025422034742_nw_file.JPEG?v=1" class="card-img-top rounded-3"
+                alt="...">
+            </div>
+            <div class="card-body pt-2 vstack gap-2">
+              <h5 class="card-title text-start">الشهادات الصحية الموسمية</h5>
+              <p class="card-text text-start">
+                أمانة العاصمة المقدسة تُعلن عن ضوابط الحصول على الشهادات الصحية الموسمية لحج عام 1446هـ
+              </p>
+              <small>2025-12-03</small>
+              <a href="#" class="btn btn-primary mt-2">المزيد</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Carousel controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#newsCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">السابق</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#newsCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">التالي</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Bottom navigation bar for mobile -->
+  <div class="mobile-tab-bar">
+    <div class="tab-item">
+      <a href="services.html" class="link-light link-underline-opacity-0 vstack gap-1">
+        <div><img class="icon" src="./img/user.svg" alt=""></div>
+        <div>خدماتي</div>
+      </a>
+    </div>
+    <div class="tab-item">
+      <a href="records.html" class="link-light link-underline-opacity-0 vstack gap-1">
+        <div><img class="icon" src="./img/list.svg" alt=""></div>
+        <div>سجلاتي</div>
+      </a>
+    </div>
+    <div class="tab-item active">
+      <a href="home.html" class="link-light link-underline-opacity-0 vstack gap-1">
+        <div><img class="icon" src="./img/home.svg" alt=""></div>
+        <div>الأمانة</div>
+      </a>
+    </div>
+    <div class="tab-item">
+      <a href="discount.html" class="link-light link-underline-opacity-0 vstack gap-1">
+        <div><img class="icon" src="./img/discount.svg" alt=""></div>
+        <div>التخفيضات</div>
+      </a>
+    </div>
+  </div>
+
+  <!-- JavaScript files -->
+  <script src="./js/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="./js/popper.min.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

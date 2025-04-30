@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <!-- Meta Tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/bootstrap-icons.min.css">
+
+  <link href="./css/aos.css" rel="stylesheet">
+
+  <!-- Title & Favicon -->
+  <title> إخلاء طرف </title>
+  <link rel="icon" type="image/png" href="./img/favicon.png">
+</head>
+
+
+<style>
+  .status-item:last-child::after {
+    content: "";
+    position: absolute;
+    right: -4px;
+    top: 32px;
+    /* matches icon height */
+    bottom: -8px;
+    width: 9px;
+    background-color: #fff;
+    /* or match your page background */
+    z-index: 1;
+  }
+
+
+  .status-timeline {
+    list-style: none;
+    padding: 0;
+    margin: 18px;
+    position: relative;
+    border-right: 2px solid #1f3b2e;
+    /* default green */
+    direction: rtl;
+  }
+
+  .status-item {
+    position: relative;
+    margin-bottom: 24px;
+    padding-right: 40px;
+  }
+
+  .status-item:last-child {
+    margin-bottom: 0;
+  }
+
+  .status-item .icon {
+    position: absolute;
+    right: -16px;
+    /* Half of width to align with the border */
+    top: 0;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+  }
+
+  .status-item .content {
+    padding-right: 10px;
+  }
+
+  .status-item .title {
+    margin: 0;
+    font-weight: 500;
+    font-size: 16px;
+  }
+
+  .status-item .note {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #6c757d;
+  }
+</style>
+
+<body>
+
+  <!-- Desktop Only Warning -->
+  <div id="desktop-warning" class="d-none d-md-flex justify-content-center align-items-center text-center"
+    data-aos-duration="3300" delay="0" data-aos="fade">
+    <div>
+      <img class="py-3" src="./img/logo.svg" width="350px">
+      <h4 class="text-danger">هــذا التطبيق مــصمم للـــجوال فقــــط</h4>
+      <p>نرجو من حضرتكم فتح التطبيق من الجوال لمعاينة أفضل</p>
+    </div>
+  </div>
+
+  <!-- Top Navigation -->
+  <div class="top-nav bg-white pb-3 pt-4 sticky-top">
+    <div class="container d-flex justify-content-between">
+      <h1 class="display-xs bold m-0   "> إخلاء طرف </h1>
+      <a href="services.html">
+        <img src="./img/back.svg" alt="رجوع">
+      </a>
+    </div>
+  </div>
+
+  <!-- Main Card Section -->
+  <div class="container bg py-4 vstack gap-3" style="justify-items: center; margin-bottom: 100px;">
+
+    <h3>
+      حالة الإخلاء من عدة جهات
+    </h3>
+    <div class="bg-white card p-3 vstack gap-1">
+
+
+      <ul class="status-timeline error">
+        <!-- Success -->
+        <li class="status-item">
+          <div class="icon bg-success text-white">
+            <i class="bi bi-check"></i>
+          </div>
+          <div class="content">
+            <p class="title">مدير عام الشؤون القانونية</p>
+          </div>
+        </li>
+
+
+        <!-- Warning -->
+        <li class="status-item warning">
+          <div class="icon bg-warning text-white">
+            <i class="bi bi-hourglass-split fs-5"></i>
+          </div>
+          <div class="content">
+            <p class="title">مدير عام المراجعة الداخلية</p>
+          </div>
+        </li>
+
+        <li class="status-item">
+          <div class="icon bg-success text-white">
+            <i class="bi bi-check"></i>
+          </div>
+          <div class="content">
+            <p class="title">مدير وحدة مراقبة المخزون</p>
+          </div>
+        </li>
+
+        <li class="status-item">
+          <div class="icon bg-success text-white">
+            <i class="bi bi-check"></i>
+          </div>
+          <div class="content">
+            <p class="title">مدير إدارة الشؤون المالية</p>
+          </div>
+        </li>
+
+        <li class="status-item">
+          <div class="icon bg-success text-white">
+            <i class="bi bi-check"></i>
+          </div>
+          <div class="content">
+            <p class="title">مدير إدارة عمليات الموارد البشرية</p>
+          </div>
+        </li>
+
+        <!-- Error 1 -->
+        <li class="status-item error">
+          <div class="icon bg-danger text-white">
+            <i class="bi bi-x"></i>
+          </div>
+          <div class="content">
+            <p class="title text-danger">مدير فرع بنك التنمية الاجتماعية</p>
+            <p class="note">يوجد لديك مبالغ غير مسددة</p>
+          </div>
+        </li>
+
+        <!-- Error 2 -->
+        <li class="status-item error">
+          <div class="icon bg-danger text-white">
+            <i class="bi bi-x"></i>
+          </div>
+          <div class="content">
+            <p class="title text-danger">مدير عام الإدارة العامة لتجربة العميل</p>
+            <p class="note">يوجد لدينا ملاحظة</p>
+          </div>
+        </li>
+
+        <!-- Error 3 -->
+        <li class="status-item error">
+          <div class="icon bg-danger text-white">
+            <i class="bi bi-x"></i>
+          </div>
+          <div class="content">
+            <p class="title text-danger">مدير عام إدارة الحركة</p>
+            <p class="note">يوجد لدينا ملاحظة</p>
+          </div>
+        </li>
+      </ul>
+
+
+    </div>
+
+
+
+  </div>
+
+  </div>
+
+  <!-- Mobile Tab Bar -->
+  <div class="mobile-tab-bar">
+    <!-- Tab: خدماتي -->
+    <div class="tab-item">
+      <a href="services.html" class="link-light link-underline-opacity-0 vstack gap-1">
+        <div><img class="icon" src="./img/user.svg" alt="خدماتي"></div>
+        <div>خدماتي</div>
+      </a>
+    </div>
+
+    <!-- Tab: سجلاتي -->
+    <div class="tab-item">
+      <a href="records.html" class="link-light link-underline-opacity-0 vstack gap-1">
+        <div><img class="icon" src="./img/list.svg" alt="سجلاتي"></div>
+        <div>سجلاتي</div>
+      </a>
+    </div>
+
+    <!-- Tab: الأمانة -->
+    <div class="tab-item">
+      <a href="home.html" class="link-light link-underline-opacity-0 vstack gap-1">
+        <div><img class="icon" src="./img/home.svg" alt="الأمانة"></div>
+        <div>الأمانة</div>
+      </a>
+    </div>
+
+    <!-- Tab: التخفيضات -->
+    <div class="tab-item">
+      <a href="discount.html" class="link-light link-underline-opacity-0 vstack gap-1">
+        <div><img class="icon" src="./img/discount.svg" alt="التخفيضات"></div>
+        <div>التخفيضات</div>
+      </a>
+    </div>
+  </div>
+
+  <!-- JavaScript Files -->
+  <script src="./js/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/popper.min.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

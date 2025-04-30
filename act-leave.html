@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <!-- Meta Tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/bootstrap-icons.min.css">
+
+  <link href="./css/aos.css" rel="stylesheet">
+
+  <!-- Title & Favicon -->
+  <title> الإجازات </title>
+  <link rel="icon" type="image/png" href="./img/favicon.png">
+</head>
+
+
+<body>
+
+  <!-- Desktop Only Warning -->
+  <div id="desktop-warning" class="d-none d-md-flex justify-content-center align-items-center text-center"
+    data-aos-duration="3300" delay="0" data-aos="fade">
+    <div>
+      <img class="py-3" src="./img/logo.svg" width="350px">
+      <h4 class="text-danger">هــذا التطبيق مــصمم للـــجوال فقــــط</h4>
+      <p>نرجو من حضرتكم فتح التطبيق من الجوال لمعاينة أفضل</p>
+    </div>
+  </div>
+
+  <!-- Top Navigation -->
+  <div class="top-nav bg-white pb-3 pt-4 sticky-top">
+    <div class="container d-flex justify-content-between">
+      <h1 class="display-xs bold m-0   "> الإجازات </h1>
+      <a href="services.html">
+        <img src="./img/back.svg" alt="رجوع">
+      </a>
+    </div>
+  </div>
+
+  <!-- Main Card Section -->
+  <div class="container bg py-4 vstack gap-3" style="justify-items: center; margin-bottom: 100px;">
+
+
+
+
+
+    <ul class="nav nav-pills  nav-justified  p-0 custom-tabs" id="pills-tab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <a class="nav-link  active" href="#" data-bs-toggle="pill" data-bs-target="#commit">إعتماد إجازة</a>
+      </li>
+      <li class="nav-item" role="presentation" data-bs-toggle="pill" data-bs-target="#order">
+        <a class="nav-link " href="#">تقديم إجازة</a>
+      </li>
+    </ul>
+
+
+
+    <div class="tab-content" id="pills-tabContent">
+      <div class="tab-pane fade  show active" id="commit" role="tabpanel" aria-labelledby="pills-profile-tab"
+        tabindex="0">
+
+        <!-- Vertical Stack Wrapper -->
+        <div class="vstack gap-3" style="width: inherit;">
+          <!-- Card: معلومات الإجازة -->
+          <div class="bg-white card p-3 vstack gap-3">
+
+            <!-- اسم الموظف -->
+            <div>
+              <h6 class="bold">اسم الموظف</h6>
+              <p>ثامر بن غازي بن حسن عابد الثقفي</p>
+            </div>
+
+            <!-- تفاصيل الإجازة -->
+            <div class="row">
+
+              <!-- بداية الإجازة -->
+              <div class="col">
+                <h6 class="bold">تبدأ الإجازة</h6>
+                <p>1446-10-20هـ</p>
+              </div>
+
+              <!-- نوع ومدة الإجازة -->
+              <div class="col">
+                <h6 class="bold">نوع ومدة الإجازة</h6>
+                <p>متفرقة - 1 يوم</p>
+              </div>
+
+            </div>
+
+
+            <div class="hstack gap-3">
+              <div class="btn btn-success w-100"> موافقة </div>
+              <div class="btn btn-outline-secondary w-100"> رفض </div>
+            </div>
+
+          </div>
+
+
+        </div>
+      </div>
+      <div class="tab-pane fade " id="order" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
+        <!-- Vertical Stack Wrapper -->
+        <div class="vstack gap-3" style="width: inherit;">
+          <!-- Card: معلومات الإجازة -->
+          <div class="bg-white card p-3 vstack gap-3">
+
+
+
+            <div class="animated-input">
+              <label for="exampleFormControlInput1" class="form-label"> نوع الإجازة </label>
+              <select class="form-select form-control" aria-label="Default select example">
+                <option selected> اختر نوع الإجازة</option>
+                <option value="1"> مرضية </option>
+                <option value="2"> سنوية </option>
+                <option value="3"> متفرقة </option>
+              </select>
+              <span class="underline"></span>
+            </div>
+
+
+
+            <div class="animated-input">
+              <label for="exampleFormControlInput1" class="form-label"> بداية الإجازة </label>
+              <input type="date" class="form-control" id="exampleFormControlInput1" placeholder=" مدة الإجازة ">
+              <span class="underline"></span>
+            </div>
+
+
+            <div class="animated-input">
+              <label for="exampleFormControlInput1" class="form-label"> مدة الإجازة </label>
+              <input type="text" class="form-control" id="exampleFormControlInput1" placeholder=" مدة الإجازة ">
+              <span class="underline"></span>
+            </div>
+
+
+            <div class="animated-input">
+              <label for="exampleFormControlInput1" class="form-label"> الملاحظات </label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                placeholder="اكتب الملاحظات.."></textarea>
+              <span class="underline"></span>
+            </div>
+
+
+            <!-- Submit button -->
+            <div class="d-grid gap-2 mt-5">
+              <a href="./services.html" class="btn btn-primary" type="button"> تقديم الطلب </a>
+            </div>
+
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+
+
+
+  </div>
+
+  </div>
+
+  <!-- Mobile Tab Bar -->
+  <div class="mobile-tab-bar">
+    <!-- Tab: خدماتي -->
+    <div class="tab-item">
+      <a href="services.html" class="link-light link-underline-opacity-0 vstack gap-1">
+        <div><img class="icon" src="./img/user.svg" alt="خدماتي"></div>
+        <div>خدماتي</div>
+      </a>
+    </div>
+
+    <!-- Tab: سجلاتي -->
+    <div class="tab-item">
+      <a href="records.html" class="link-light link-underline-opacity-0 vstack gap-1">
+        <div><img class="icon" src="./img/list.svg" alt="سجلاتي"></div>
+        <div>سجلاتي</div>
+      </a>
+    </div>
+
+    <!-- Tab: الأمانة -->
+    <div class="tab-item">
+      <a href="home.html" class="link-light link-underline-opacity-0 vstack gap-1">
+        <div><img class="icon" src="./img/home.svg" alt="الأمانة"></div>
+        <div>الأمانة</div>
+      </a>
+    </div>
+
+    <!-- Tab: التخفيضات -->
+    <div class="tab-item">
+      <a href="discount.html" class="link-light link-underline-opacity-0 vstack gap-1">
+        <div><img class="icon" src="./img/discount.svg" alt="التخفيضات"></div>
+        <div>التخفيضات</div>
+      </a>
+    </div>
+  </div>
+
+  <!-- JavaScript Files -->
+  <script src="./js/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/popper.min.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

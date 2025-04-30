@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <!-- Meta Tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/bootstrap-icons.min.css">
+
+  <link href="./css/aos.css" rel="stylesheet">
+
+  <!-- Page Title and Favicon -->
+  <title> أداء مهمة </title>
+  <link rel="icon" type="image/png" href="./img/favicon.png">
+</head>
+
+
+<body>
+
+  <!-- Desktop warning (only visible on larger screens) -->
+  <div id="desktop-warning" class="d-none d-md-flex justify-content-center align-items-center text-center"
+    data-aos-duration="3300" delay="0" data-aos="fade">
+    <div>
+      <img class="py-3" src="./img/logo.svg" width="350px">
+      <h4 class="text-danger">هــذا التطبيق مــصمم للـــجوال فقــــط</h4>
+      <p>نرجو من حضرتكم فتح التطبيق من الجوال لمعاينة أفضل</p>
+    </div>
+  </div>
+
+  <!-- Top navigation header -->
+  <div class="top-nav bg-white pb-3 pt-4 sticky-top">
+    <div class="container d-flex justify-content-between">
+      <h1 class="display-xs bold m-0   "> أداء مهمة </h1>
+      <a href="services.html">
+        <img src="./img/back.svg" alt="رجوع">
+      </a>
+    </div>
+  </div>
+
+  <!-- Main section with content and tabs -->
+  <div class="container bg py-4 vstack gap-3" style="justify-items: center; margin-bottom: 100px;">
+
+    <!-- Navigation pills (tabs) -->
+    <ul class="nav nav-pills  nav-justified  p-0 custom-tabs" id="pills-tab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <a class="nav-link  active" href="#" data-bs-toggle="pill" data-bs-target="#commit">إعتماد مهمة </a>
+      </li>
+      <li class="nav-item" role="presentation" data-bs-toggle="pill" data-bs-target="#order">
+        <a class="nav-link " href="#"> تقديم طلب مهمة </a>
+      </li>
+    </ul>
+
+    <!-- Tabs content -->
+    <div class="tab-content" id="pills-tabContent">
+      <div class="tab-pane fade show active " id="commit" role="tabpanel" aria-labelledby="pills-profile-tab"
+        tabindex="0">
+
+        <!-- Vertical stack for mission info -->
+        <div class="vstack gap-3" style="width: inherit;">
+
+          <!-- Card for mission details -->
+          <div class="bg-white card p-3 vstack gap-1">
+
+            <!-- Employee name -->
+            <div>
+              <h6 class="bold">اسم الموظف</h6>
+              <p>ثامر بن غازي بن حسن عابد الثقفي</p>
+            </div>
+
+            <!-- Mission start and duration -->
+            <div class="row">
+              <div class="col">
+                <h6 class="bold"> يبدأ الإنتداب </h6>
+                <p>1446-10-20هـ</p>
+              </div>
+              <div class="col">
+                <h6 class="bold"> المدينة - المدة </h6>
+                <p> الرياض - 5 أيام </p>
+              </div>
+            </div>
+
+            <!-- Attachment icon -->
+            <div class="row">
+              <div class="col">
+                <h6 class="bold"> المرفق </h6>
+                <h4>
+                  <i class="bi bi-file-earmark-arrow-down text-primary "></i>
+                </h4>
+              </div>
+            </div>
+
+            <!-- Approve / Reject buttons -->
+            <div class="hstack gap-3">
+              <div class="btn btn-success w-100"> موافقة </div>
+              <div class="btn btn-outline-secondary w-100"> رفض </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab for submitting mission request -->
+      <div class="tab-pane fade  " id="order" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
+
+        <!-- Stack of cards -->
+        <div class="vstack gap-3" style="width: inherit;">
+          <div class="bg-white rounded-3 py-3">
+
+            <!-- Clickable item to open modal -->
+
+            <a href="#" class="clickable-link" data-bs-toggle="modal" data-bs-target="#bottomSheetModal">
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="hstack gap-2">
+                  <i class="bi bi-folder fs-4  "></i>
+                  <span> رقم قرار الانتداب 129480 </span>
+                </div>
+                <i class="bi bi-chevron-left display-xs"></i>
+
+              </div>
+            </a>
+
+
+
+            <hr>
+
+            <!-- Repeated item 1 -->
+            <a href="#" class="clickable-link" data-bs-toggle="modal" data-bs-target="#bottomSheetModal">
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="hstack gap-2">
+                  <i class="bi bi-folder fs-4  "></i>
+                  <span> رقم قرار الانتداب 129480 </span>
+                </div>
+                <i class="bi bi-chevron-left display-xs"></i>
+
+              </div>
+            </a>
+
+
+            <hr>
+
+            <!-- Repeated item 2 -->
+            <a href="#" class="clickable-link" data-bs-toggle="modal" data-bs-target="#bottomSheetModal">
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="hstack gap-2">
+                  <i class="bi bi-folder fs-4  "></i>
+                  <span> رقم قرار الانتداب 129480 </span>
+                </div>
+                <i class="bi bi-chevron-left display-xs"></i>
+
+              </div>
+            </a>
+
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom sheet modal -->
+  <div class="modal fade bottom-sheet" id="bottomSheetModal" tabindex="-1" dir="rtl">
+    <div class="modal-dialog modal-fullscreen-sm-down modal-dialog-bottom">
+      <div class="modal-content rounded-top">
+
+        <!-- Modal header with handle -->
+        <div class="modal-header border-0 justify-content-center position-relative">
+          <span class="modal-handle"></span>
+        </div>
+
+        <!-- Modal body content -->
+        <div class="modal-body text-center">
+
+          <!-- Title and close button -->
+          <div class="d-flex justify-content-between ">
+
+            <button type="button" class="btn-close  start-0 m-2" data-bs-dismiss="modal"
+              aria-label="Close"></button><span class="fw-bold  justify-content-center "> رقم الطلب 129480
+            </span><button type="button" class="btn-close opacity-0 start-0 m-2" data-bs-dismiss="modal"
+              aria-label="Close"></button>
+          </div>
+
+          <!-- Info card -->
+          <div class="bg-white rounded-3 py-3">
+
+            <!-- Mission start -->
+            <div class="d-flex justify-content-between px-4 py-1">
+              <h5> بداية الانتداب </h5>
+              <p class="mb-0 text-muted fs-6"> 1446-10-20هـ </p>
+            </div>
+            <hr>
+
+            <!-- Supervisor -->
+            <div class="d-flex justify-content-between px-4 py-1">
+              <h5> الرئيس المباشر </h5>
+              <p class="mb-0 text-muted fs-6"> خالد بن بندر المدني </p>
+            </div>
+            <hr>
+
+            <!-- Duration and city -->
+            <div class="d-flex justify-content-between px-4 py-1">
+              <h5> المدة -المدينة </h5>
+              <p class="mb-0 text-muted fs-6"> 1 يوم- الرياض </p>
+            </div>
+            <hr>
+
+            <!-- Transportation and meals -->
+            <div class="d-flex justify-content-between px-4 py-1">
+              <h5> المواصلات - الطعام </h5>
+              <p class="mb-0 text-muted fs-6"> الجهة- الموظف </p>
+            </div>
+            <hr>
+
+            <!-- Accommodation and travel -->
+            <div class="d-flex justify-content-between px-4 py-1">
+              <h5> السكن - السفر </h5>
+              <p class="mb-0 text-muted fs-6"> الجهة- الجهة </p>
+            </div>
+
+            <!-- Template for additional rows -->
+            <!--
+            <div class="d-flex justify-content-between px-4 py-1">
+              <h5> </h5>
+              <p class="mb-0 text-muted fs-6"> </p>
+            </div>
+            -->
+
+          </div>
+
+          <!-- Submit request button -->
+          <button class="btn btn-dark w-100 mt-4">إضافة طلب</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile tab bar navigation -->
+  <div class="mobile-tab-bar">
+
+    <!-- Tab: Services -->
+    <div class="tab-item">
+      <a href="services.html" class="link-light link-underline-opacity-0 vstack gap-1">
+        <div><img class="icon" src="./img/user.svg" alt="خدماتي"></div>
+        <div>خدماتي</div>
+      </a>
+    </div>
+
+    <!-- Tab: Records -->
+    <div class="tab-item">
+      <a href="records.html" class="link-light link-underline-opacity-0 vstack gap-1">
+        <div><img class="icon" src="./img/list.svg" alt="سجلاتي"></div>
+        <div>سجلاتي</div>
+      </a>
+    </div>
+
+    <!-- Tab: Home -->
+    <div class="tab-item">
+      <a href="home.html" class="link-light link-underline-opacity-0 vstack gap-1">
+        <div><img class="icon" src="./img/home.svg" alt="الأمانة"></div>
+        <div>الأمانة</div>
+      </a>
+    </div>
+
+    <!-- Tab: Discounts -->
+    <div class="tab-item">
+      <a href="discount.html" class="link-light link-underline-opacity-0 vstack gap-1">
+        <div><img class="icon" src="./img/discount.svg" alt="التخفيضات"></div>
+        <div>التخفيضات</div>
+      </a>
+    </div>
+  </div>
+
+
+  <!-- AOS animation plugin -->
+  <script src="./js/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+  <!-- Additional JS libraries -->
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/popper.min.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
