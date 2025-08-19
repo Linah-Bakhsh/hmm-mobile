@@ -24,6 +24,15 @@ A demo **mobile web app** that simulates the design and user experience of the *
 
 🚀 **Developed as a showcase project for the Holy Makkah Municipality mobile app concept.**  
 
+
+## 📸 Screenshots
+
+Here is a quick preview of the app:
+
+![App Mockup](mockup.png)
+
+
+
 ---
 
 ### عربي 🇸🇦
@@ -48,5 +57,13 @@ A demo **mobile web app** that simulates the design and user experience of the *
 👈 [جرّب التطبيق](https://linah-bakhsh.github.io/hmm-mobile/)
 
 🚀 **تم تطوير المشروع كنسخة استعراضية لتجربة تطبيق الجوال الخاص بأمانة العاصمة المقدسة.**
+
+
+## 📸 لقطات شاشة
+
+هنا عرض سريع للتطبيق:
+
+![عرض التطبيق](mockup.png)
+
 
 ---
