@@ -45,7 +45,7 @@ A demo **mobile web app** that simulates the design and user experience of the *
  ـ JavaScript  
 
 ### 🔗 رابط المشروع
- [جرّب التطبيق] 👈 (https://linah-bakhsh.github.io/hmm-mobile/)
+[جرّب التطبيق 👈](https://linah-bakhsh.github.io/hmm-mobile/)
 
 🚀 **تم تطوير المشروع كنسخة استعراضية لتجربة تطبيق الجوال الخاص بأمانة العاصمة المقدسة.**
 
