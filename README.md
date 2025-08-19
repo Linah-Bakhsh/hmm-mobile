@@ -16,7 +16,7 @@ A demo **mobile web app** that simulates the design and user experience of the *
 
 ### 🛠️ Tech Stack
 - HTML5  
-- CSS3 + Tailwind CSS  
+- CSS3 + Bootatrap CSS  
 - JavaScript  
 
 ### 🔗 Live Demo
@@ -40,7 +40,7 @@ A demo **mobile web app** that simulates the design and user experience of the *
 ### 🛠️ التقنيات المستخدمة
 
  ـ HTML5
- ـ CSS3 + Tailwind CSS  
+ ـ CSS3 + Bootatrap CSS  
  ـ JavaScript  
 
 ### 🔗 رابط المشروع
