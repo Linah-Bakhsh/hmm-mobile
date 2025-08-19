@@ -2,7 +2,6 @@
  #  | أمانة العاصمة المقدسة
 
 A demo **mobile web app** that simulates the design and user experience of the **Holy Makkah Municipality mobile application**.  
-مشروع **تطبيقي تجريبي** يحاكي تصميم وتجربة تطبيق الجوال الخاص **بأمانة العاصمة المقدسة**.
 
 ---
 
